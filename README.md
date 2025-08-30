@@ -69,7 +69,7 @@ Do not use it on networks you don’t own or without explicit permission. Misuse
 ## 📡 Usage
 
 * Just **power up the ESP8266** → it automatically scans and sends DeAuth packets to all Wi-Fi APs in range.
-* Open **Serial Monitor** (115200 baud) to see the SSIDs it’s attacking in real time.
+* Open **Serial Monitor** (115200 baud) to see the Wi-Fi Networks it’s attacking in real time.
 
 Example output:
 
