@@ -74,9 +74,21 @@ Do not use it on networks you don’t own or without explicit permission. Misuse
 Example output:
 
 ```
-Targeting SSID: MyHomeWiFi
-Targeting SSID: TP-LINK_AP
-Targeting SSID: CafeFreeNet
+[SCAN] Found 5 networks:
+==========================================
+ID | RSSI(dBm) | CH | SSID
+------------------------------------------
+0  | -45    | 6  | MyHomeNetwork
+1  | -62    | 11 | NeighborWiFi
+2  | -68    | 1  | GuestNetwork
+==========================================
+
+[ATTACK] Targeting: MyHomeNetwork (RSSI: -45dBm) - Sending 10 packets
+[ATTACK] Targeting: NeighborWiFi (RSSI: -62dBm) - Sending 8 packets
+[ATTACK] Targeting: GuestNetwork (RSSI: -68dBm) - Sending 6 packets
+
+[STATUS] Networks found: 15 | Active networks: 3 | Packets sent: 45 | Successful: 45
+[TARGETS] Currently targeting: MyHomeNetw, NeighborWiF, GuestNetwor...
 ...
 ```
 
@@ -90,22 +102,5 @@ Only use in controlled environments for **educational, security testing, or rese
 The author is **not responsible** for any misuse.
 
 ---
-
-## 🤝 Contributing
-
-Pull requests, issues, and improvements are welcome.
-
-1. Fork the repo
-2. Create a branch
-3. Commit your changes
-4. Open a PR
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-See [`LICENSE`](LICENSE) for details.
-
 
 It's Written by ChatGPT :) nevermind
