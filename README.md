@@ -33,7 +33,7 @@ Do not use it on networks you don’t own or without explicit permission. Misuse
 ## 🚀 Flashing the Firmware
 
 ### Option 1: Use Precompiled `.bin`  
-1. Download the `.bin` from the `/firmware` folder.  
+1. Download the `.bin` from the `/firmware` folder or Visit Realeases to see advance versions 
 2. Connect your ESP8266 to USB.  
 3. Flash with your tool of choice:
 
