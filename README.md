@@ -1,4 +1,3 @@
-````markdown
 # JammDeauth (ESP8266 Auto DeAuth Tool)
 
 **JammDeauth** is a fully automated **ESP8266 Wi-Fi jammer**.  
@@ -108,3 +107,6 @@ Pull requests, issues, and improvements are welcome.
 
 This project is licensed under the **MIT License**.
 See [`LICENSE`](LICENSE) for details.
+
+
+It's Written by ChatGPT :) nevermind
