@@ -45,7 +45,6 @@ Do not use it on networks you don’t own or without explicit permission. Misuse
    **Command line (esptool.py):**
    ```bash
    esptool.py --port COM3 write_flash 0x00000 JammDeauth.bin
-````
 
 *(replace `COM3` with your port and filename if different)*
 
