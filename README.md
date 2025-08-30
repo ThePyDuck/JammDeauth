@@ -60,7 +60,7 @@ Do not use it on networks you don’t own or without explicit permission. Misuse
    ```
    http://arduino.esp8266.com/stable/package_esp8266com_index.json
    ```
-3. Open the code in `/src`.
+3. Open the code in `/JammDeAuth`.
 4. Select your ESP8266 board (e.g. NodeMCU 1.0).
 5. Hit **Upload**.
 
