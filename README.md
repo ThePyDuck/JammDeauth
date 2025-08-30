@@ -48,8 +48,6 @@ Do not use it on networks you don’t own or without explicit permission. Misuse
 
 *(replace `COM3` with your port and filename if different)*
 
-4. Reboot the ESP8266 → it will instantly start jamming.
-
 ---
 
 ### Option 2: Build from Source (Arduino IDE)
