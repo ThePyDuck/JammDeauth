@@ -1,2 +1,110 @@
-# JammDeauth
-This Is a Uncontrollable Little Beast That Send DeAuth Packets to Every Single Network In It's Range Just Like a Jammer
+````markdown
+# JammDeauth (ESP8266 Auto DeAuth Tool)
+
+**JammDeauth** is a fully automated **ESP8266 Wi-Fi jammer**.  
+Once flashed, the ESP8266 will instantly start sending **deauthentication frames** to every Wi-Fi network it detects — no configuration needed.  
+
+You can watch which networks it’s attacking using the **Arduino Serial Monitor** or any serial terminal.
+
+⚠️ **This project is for educational and research purposes only!**  
+Do not use it on networks you don’t own or without explicit permission. Misuse may be **illegal**.
+
+---
+
+## 🔥 Features
+
+- **Plug and play**: just flash and power it up  
+- **Automatic scanning + attacking** (no setup required)  
+- **Serial Monitor feedback**: see SSIDs being targeted in real time  
+- **Lightweight**: runs on any ESP8266 board (NodeMCU, Wemos D1 Mini, ESP-01, etc.)  
+
+---
+
+## 🛠 Requirements
+
+- ESP8266 development board (e.g. NodeMCU, Wemos D1 Mini, ESP-01)  
+- USB cable + PC  
+- Flashing tool:  
+  - [ESP8266Flasher (Windows)](https://github.com/nodemcu/nodemcu-flasher)  
+  - [esptool.py (cross-platform)](https://github.com/espressif/esptool)  
+  - or **Arduino IDE** (to build from source)  
+
+---
+
+## 🚀 Flashing the Firmware
+
+### Option 1: Use Precompiled `.bin`  
+1. Download the `.bin` from the `/firmware` folder.  
+2. Connect your ESP8266 to USB.  
+3. Flash with your tool of choice:
+
+   **Windows (ESP8266Flasher):**
+   - Select COM port  
+   - Load the `.bin`  
+   - Click *Flash*  
+
+   **Command line (esptool.py):**
+   ```bash
+   esptool.py --port COM3 write_flash 0x00000 JammDeauth.bin
+````
+
+*(replace `COM3` with your port and filename if different)*
+
+4. Reboot the ESP8266 → it will instantly start jamming.
+
+---
+
+### Option 2: Build from Source (Arduino IDE)
+
+1. Install [Arduino IDE](https://www.arduino.cc/en/software).
+2. Add ESP8266 board support in *Preferences* → Board Manager URL:
+
+   ```
+   http://arduino.esp8266.com/stable/package_esp8266com_index.json
+   ```
+3. Open the code in `/src`.
+4. Select your ESP8266 board (e.g. NodeMCU 1.0).
+5. Hit **Upload**.
+
+---
+
+## 📡 Usage
+
+* Just **power up the ESP8266** → it automatically scans and sends DeAuth packets to all Wi-Fi APs in range.
+* Open **Serial Monitor** (115200 baud) to see the SSIDs it’s attacking in real time.
+
+Example output:
+
+```
+Targeting SSID: MyHomeWiFi
+Targeting SSID: TP-LINK_AP
+Targeting SSID: CafeFreeNet
+...
+```
+
+---
+
+## ⚠️ Disclaimer
+
+This project **interferes with Wi-Fi communications**. Running it on public or private networks without permission is **illegal** in many countries.
+Only use in controlled environments for **educational, security testing, or research purposes**.
+
+The author is **not responsible** for any misuse.
+
+---
+
+## 🤝 Contributing
+
+Pull requests, issues, and improvements are welcome.
+
+1. Fork the repo
+2. Create a branch
+3. Commit your changes
+4. Open a PR
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+See [`LICENSE`](LICENSE) for details.
